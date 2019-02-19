@@ -1,0 +1,19 @@
+header {
+    grid-area: header;
+    
+  }
+  main {
+    grid-area: main;
+  }
+  nav {
+    grid-area: nav;
+  }
+  aside {
+    grid-area: aside;
+  }
+  .banner {
+    grid-area: banner;
+  }
+  footer {
+    grid-area: footer;
+  }
