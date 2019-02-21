@@ -8,20 +8,38 @@ main {
   grid-area: main;
 }
 nav {
-  display: grid;
-  grid-template-columns: 20 20 20 20 20;
-  grid-template-rows: 25 25 25 25;
-  
-  background-color: red;
-  
+display: grid;
+grid-template-columns: 1 fr 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr 1fr 1fr
+background-color: blue;
+
+.button7 {
+grid-column: 1/2;
+grid-row: 1/2;}
+.button8 {
+grid-column: 2/3;
+grid-row: 1/2;}
+.button9 {
+  grid-column: 3/4;
+  grid-row: 1/2;}
+.button4 {
+  grid-column: 1/2;
+  grid-row:2/3;}
+
+
+
 }
 aside {
   background-color: lightgreen;
   grid-area: aside;
 }
 .banner {
-  background-color: lavender;
+  background-color: blue;
   grid-area: banner;
+  display: grid
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 5px 10px;
 }
 footer {
   background-color: khaki;
