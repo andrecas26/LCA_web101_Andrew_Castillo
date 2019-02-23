@@ -3,28 +3,43 @@ header {
   grid-area: header;
 }
 main {
-  background-color: pink;
+  background-image: pink;
   min-height: calc(100vh - 54px);
   grid-area: main;
 }
 nav {
-display: grid;
-grid-template-columns: 1 fr 1fr 1fr 1fr;
-grid-template-rows: 1fr 1fr 1fr 1fr 1fr
-background-color: blue;
-
-.button7 {
-grid-column: 1/2;
-grid-row: 1/2;}
-.button8 {
-grid-column: 2/3;
-grid-row: 1/2;}
-.button9 {
-  grid-column: 3/4;
-  grid-row: 1/2;}
-.button4 {
-  grid-column: 1/2;
-  grid-row:2/3;}
+  html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+  }
+  
+  *, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+  
+  .calculator {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+  }
+  
+  .calculator-screen {
+    width: 100%;
+    font-size: 5rem;
+    height: 80px;
+    border: none;
+    background-color: #252525;
+    color: #fff;
+    text-align: right;
+    padding-right: 20px;
+    padding-left: 10px;
+  }
 
 
 
@@ -32,45 +47,124 @@ grid-row: 1/2;}
 aside {
   background-color: lightgreen;
   grid-area: aside;
-}
-.banner {
-  background-color: blue;
-  grid-area: banner;
-  display: grid
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-gap: 5px 10px;
-}
-footer {
-  background-color: khaki;
-  grid-area: footer;
-}
 
-.container {
-  display: grid;
-  grid-template-areas: 
-    "header"
-    "nav"
-    "main"
-    "aside"
-    "banner"
-    "footer";
-}
-
-@media (min-width: 500px) {
+  }
+  main {
+  box-sizing: border-box;
+  }
+          body {
+              min-height: 10vh;
+              display:center;
+              justify-content: center;
+              align-items: flex-start;
+          }
+          .container{
+              display:flex;
+              flex-wrap: wrap;
+              flex: 0 1 60%;
+              min-width:400px;
+          }
+  
+          .buttons,.result{
+              display: flex;
+              flex-wrap: wrap;
+              flex: 0 1 100%;
+          }
+          .result{
+              height: 40px;
+              border: 1px solid black;
+              justify-content: flex-end;
+              align-items: center;
+              font-size: 15px;
+              background: #000;
+              color:#fff;
+              padding:0 10px;
+          }
+          .button{
+              display:flex;
+              flex: 0 1 25%;
+              justify-content: center;
+              align-items: center;
+              height: 40px;
+              border: 1px solid black;
+              border-top:none;
+              border-left:none;
+              cursor: pointer;
+              background: -webkit-linear-gradient(top,#d2d2d2,#ddd);
+              font-size:1em;
+          }
+          .button:nth-child(4n+1){
+              border-left: 1px solid black;
+          }
+          .button:nth-child(4n),.button:last-child{
+              background: #f98110;
+              color: #fff;
+          }
+          .zero-btn{
+              flex-grow: 2;
+          }
+          .doubleBordered{
+              border: 2px solid black;
+          }
+    min-height: calc(100vh - 54px);
+    grid-area: main;
+  }
+  nav {
+    background-color: lightsalmon;
+    grid-area: nav;
+  }
+  aside {
+    background-color: lightgreen;
+    grid-area: aside;
+  }
+  .banner {
+    background-color: lavender;
+    grid-area: banner;
+  }
+  footer {
+    background-color: khaki;
+    grid-area: footer;
+  }
+  
   .container {
-    grid-template-columns: 1fr 3fr;
+    display: grid;
     grid-template-areas: 
-      "header  header"
-      "nav     nav"
-      "aside   main"
-      "banner  footer";
+      "header"
+      "nav"
+      "main"
+      "aside"
+      "banner"
+      "footer";
   }
-  nav ul {
-    display: flex;
-    justify-content: space-between;
+  
+  @media (min-width: 500px) {
+    .container {
+      grid-template-columns: 1fr 3fr;
+      grid-template-areas: 
+        "header  header"
+        "nav     nav"
+        "aside   main"
+        "banner  footer";
+    }
+    nav ul {
+      display: flex;
+      justify-content: space-between;
+    }
   }
-}
+  
+  @media (min-width: 700px) {
+    .container {
+      grid-template-columns: 1fr 4fr 1fr;
+      grid-template-areas: 
+        "header header  header"
+        "nav    main    aside"
+        "nav    main    banner"
+        "footer footer  footer"
+     }
+     nav ul {
+       flex-direction: column;
+     }
+  }
 
 @media (min-width: 700px) {
   .container {
