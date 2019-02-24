@@ -1,6 +1,22 @@
-header{
-    display: flexbox;
+body{
+    magin: 0 auto;
+}
+
+header {
     width: 850px;
     height: 450px;
-    
+    margin: 0 auto;
+    background-color: white;
+    background-image:
+}
+
+section  {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+article {
+   width: 270 px;
+   height: 324 px;
+   background-color: lightgray;
 }
