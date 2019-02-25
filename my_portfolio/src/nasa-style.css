@@ -1,6 +1,28 @@
-header{
-    display: flexbox;
+body{
+    magin: 0 auto;
+}
+
+main {
     width: 850px;
     height: 450px;
-    
+    background-color: white;
+    background-image: url("https://eoimages.gsfc.nasa.gov/images/imagerecords/74000/74468/world.topo.200410.3x5400x2700.jpg");
+    color: white;
+    font-size: 35px;
+}
+
+
+section  {
+    height: 324px;
+    width: 850px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: lightgray;
+}
+article {
+   width: 270 px;
+   height: 324 px;
+   background-color: lightgray;
+   text-align: center;
 }
