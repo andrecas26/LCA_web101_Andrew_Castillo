@@ -5,6 +5,7 @@ header {
 background-color: white;
 text-align: center;
 flex-direction: row;
+grid-area: header;
 }
 ul {
     list-style-type: none;
@@ -13,13 +14,23 @@ main {
     background-color: lightgray;
     background-image: url('https://www.styleinterest.com/wp-content/uploads/2016/02/15020216-shaved-side-hairstyle.jpg');
     background-size: cover;
+    grid-area: main;
 }
 article {
-    
-    height: 480px;
-    width: 100%;
+    grid-area: article;
+    /*height: 480px;
+    width: 100%;*/
     background-color: lightgreen;
 }
 footer {
     background-color: rgb(37,37,37);
+    grid-area: footer;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas:
+    "header header header"
+    "article main main"
+    "footer footer footer"
 }
