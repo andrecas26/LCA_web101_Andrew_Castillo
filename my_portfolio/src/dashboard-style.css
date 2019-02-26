@@ -181,11 +181,11 @@ aside {
         "header header  header"
         "nav    main    aside"
         "nav    main    banner"
-        "footer footer  footer";}
+        "footer footer  footer"
     main {
       background-image: url('https://www.sunflowerwellnessretreat.com/wp-content/uploads/2015/02/inspiration.jpg');
     }
-      backgrond-size: 100% 100%;
+      backgrond-size: cover;
     
      nav ul {
        flex-direction: column;
