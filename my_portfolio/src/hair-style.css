@@ -1,0 +1,25 @@
+body{
+margin: 0 auto;
+}
+header {
+background-color: white;
+text-align: center;
+flex-direction: row;
+}
+ul {
+    list-style-type: none;
+}
+main {
+    background-color: lightgray;
+    background-image: url('https://www.styleinterest.com/wp-content/uploads/2016/02/15020216-shaved-side-hairstyle.jpg');
+    background-size: cover;
+}
+article {
+    
+    height: 480px;
+    width: 100%;
+    background-color: lightgreen;
+}
+footer {
+    background-color: rgb(37,37,37);
+}
