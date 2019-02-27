@@ -1,36 +1,41 @@
 body{
-margin: 0 auto;
-}
-header {
-background-color: white;
-text-align: center;
-flex-direction: row;
-grid-area: header;
-}
-ul {
-    list-style-type: none;
-}
-main {
-    background-color: lightgray;
-    background-image: url('https://www.styleinterest.com/wp-content/uploads/2016/02/15020216-shaved-side-hairstyle.jpg');
-    background-size: cover;
-    grid-area: main;
-}
-article {
-    grid-area: article;
-    /*height: 480px;
-    width: 100%;*/
-    background-color: lightgreen;
-}
-footer {
-    background-color: rgb(37,37,37);
-    grid-area: footer;
-}
-.container {
-    display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
-    grid-template-areas:
-    "header header header"
-    "article main main"
-    "footer footer footer"
-}
+    margin: 0 auto;
+    }
+    header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    grid-area: header;
+    }
+    main {
+      background-image: url('https://www.styleinterest.com/wp-content/uploads/2016/02/15020216-shaved-side-hairstyle.jpg');
+      background-size: cover;
+      grid-area: main;
+      display: flex;
+      justify-content: space around;
+      flex-direction: column;
+    }
+    article {
+        grid-area: article;
+        background-color: lightgreen;
+        display: flex;
+        justify-content: space-between;
+    }
+    footer {
+        background-color: rgb(37,37,37);
+        grid-area: footer;
+        color: white;
+    .socialmedia{
+      display: flex;
+      flex-direction: row-reverse;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-areas:
+        "header header header"
+        "article article article"
+        "main main main"
+        "footer footer footer"
+    }
