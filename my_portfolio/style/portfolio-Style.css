@@ -1,4 +1,24 @@
+header{
+    background-color: red;
+    height: 250px;
+    width: 100%;
+}
+.name{
+    display: flex;
+    justify-content: space-around
+}
+.job{
+    display: flex;
+    align-items: flex-end;
+    color: rgb(78, 3, 78);
+}
 Form {
-    font-size: 30px;
+    font-size: 15px;
     display:flex
+}
+Nav {
+    font-size: 50px;
+    display:flex;
+    justify-content: space-around;
+
 }
