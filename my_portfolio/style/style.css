@@ -89,10 +89,9 @@ body {
     letter-spacing: 16px;
     font-style: italic;
   }
-  @keyframes welcome
-  {
-    from{color: red}
-    to{color: green}
+P{
+  font-size: 60px;
+}
   }
 
   /* Extra Small and up (Portrait Phones) */
