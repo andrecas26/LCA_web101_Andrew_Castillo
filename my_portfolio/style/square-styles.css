@@ -47,6 +47,7 @@ button{
 }
 button:hover{
     background-color: seagreen;
+    align-items: center;
 }
 .odd{
     transition: all 5s;
@@ -66,4 +67,5 @@ button:hover{
 }
 /*.wrapper>.even{
     transition: width 2s;
-}*/
+}
+translateX(cal(50vw-100px)*/
