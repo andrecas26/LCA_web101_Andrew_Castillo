@@ -1,0 +1,7 @@
+body{
+    background-color: red;
+}
+.wrapper{
+    display: flex;
+    padding: 20px;
+}
