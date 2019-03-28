@@ -7,21 +7,21 @@
     width: 300px;
     height:300px;
     max-height:300px;
-    min-hegith:300px;
+    min-height:300px;
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-left:calc{50vw-150px};
+    margin-left:calc {50vw-150px};
 }
 #commands{
     margin-top: 50px;
     width:300px;
     height:300px;
     max-height:300px;
-    min-heigth:300px;
-    margin-left:calc{50vw-150px};
+    min-height:300px;
+    margin-left:calc {50vw-150px};
     text-align:center;
 }
-.piece-block{
+.one{
     width:100px;
     height:100px;
     border:1px solid black;
