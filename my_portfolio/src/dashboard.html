@@ -7,7 +7,8 @@
     <title>Dashboard</title>
     <link rel="stylesheet" href="../style/dashboard-style.css">
     <a href="portfolio.html">portfolio</a>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
 </head>
 <body>
   <header>To find all things poosible, keep your head up!</header>
@@ -49,12 +50,17 @@
     </div>
   </nav>
   <main>
-      <h1>To do list</h1>
+    <div id="list_section">
+      <h1 id="header">Grocery List</h1>
       <ul>
-       <li>go to soccer practice</li> 
-       <li>turn in resume online</li> 
-       <li>grocery shopping</li> 
+        <li class="item">Add Items</li>
       </ul>
+      <div id="newItemButton"><button href="#">new item</button></div>
+      <form id="newItemForm">
+        <input type="text" id="itemField" placeholder="Item" />
+        <input type="submit" id="add" value="add" />
+      </form>
+    </div>
   </main>
   <aside>Flex Calculator
     <div class="container">
@@ -86,6 +92,8 @@
     <h3>February 19, 2019</h3>
     <h3>5:50 pm</h3></div>
  <footer>Copyright 2019| Terms of use</footer>
+<script src="../scripts/jquery-3.3.1.js"></script>
+<script src="../scripts/dashboard.js"></script>
 </body>
 </html>
 
