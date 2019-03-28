@@ -4,6 +4,9 @@ function changeMarkerToX(){
     gameMarker="X";
     //console.log("The X button was clicked!");
 }
+
+var gameMarker= "O";
+
 function changeMarkerToO(){
     gameMarker="O";
     //console.log("The O button was clicked!");
