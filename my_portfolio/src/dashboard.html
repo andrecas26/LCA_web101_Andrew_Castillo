@@ -6,9 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dashboard</title>
     <link rel="stylesheet" href="../style/dashboard-style.css">
-    <a href="portfolio.html">portfolio</a>
-    
-
+    <script src="../scripts/dashboard.js"></script>
 </head>
 <body>
   <header>To find all things poosible, keep your head up!</header>
@@ -53,7 +51,7 @@
     <div id="list_section">
       <h1 id="header">Grocery List</h1>
       <ul>
-        <li class="item">Add Items</li>
+      <!--<li class="item">Add Items</li> jQuery to do list-->  
       </ul>
       <div id="newItemButton"><button href="#">new item</button></div>
       <form id="newItemForm">
@@ -87,8 +85,11 @@
           <span class="button  operator">=</span></div>
   </aside>
   <banner><img src="../images/wireframe.jpg" alt="Wire frame"></banner>
-  <div class="banner"> 
-      <h1>Date and Time</h1>
+  <div class="banner">
+      <button onclick="getLocation()">Get Location!</button>
+      <p id="my-coordinates"></p>
+      <button type="reset" value="Reset">Clear</button>
+    <h1>Date and Time</h1>
     <h3>February 19, 2019</h3>
     <h3>5:50 pm</h3></div>
  <footer>Copyright 2019| Terms of use</footer>
@@ -97,4 +98,4 @@
 </body>
 </html>
 
-my_portfolio\images\wireframe.jpg.jpg
+<!--my_portfolio\images\wireframe.jpg.jpg-->

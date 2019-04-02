@@ -177,6 +177,9 @@ aside {
   footer {
     width: 100%;
   }
+  #itemfield{
+    color: white;
+  }
   /* Medium and up (Tablets) */
   @media (min-width: 768px) {
   .container {
@@ -219,8 +222,10 @@ aside {
         "footer footer  footer"
     main {
       background-image: url('https://www.sunflowerwellnessretreat.com/wp-content/uploads/2015/02/inspiration.jpg');
+      background-repeat: no-repeat;
+      background-size: auto;
     }
-      backgrond-size: cover;
+    /*  backgrond-size: cover;*/
     
      nav ul {
        flex-direction: column;
