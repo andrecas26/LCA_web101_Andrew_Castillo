@@ -21,33 +21,53 @@
     src="hand.mp4" width= "600px" controls autoplay loop preload="auto" 
 >This is a video with a comet</video>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/y2KPPzKJrbg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<section> 
-<form>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/y2KPPzKJrbg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+<h2 class="form">Form</h2>
+<form id="data">
     Name:<input type="text" name="name" id="name" required>
-    <input type="date" name="DOB" id="date-of-birth" required>
-    <input type="email" name="Email Address" id="email" required>
-    <textarea>Message</textarea>
-    <input type="text" name="Location" id="Location" required>
+    Date of birth<input type="date" name="DOB" id="date-of-birth" required>
+    Email Address<input type="email" name="Email Address" id="email" required>
+    Enter Message<textarea>Message</textarea>
+    Location<input type="text" name="Location" id="Location" required>
     <input type="submit" value="Submit">
     <input type="reset" value="Reset">
-</form></section>
-<section class="images">
-<div><a href="Hair.html">
-    <img src="../images/hairPage.jpg" alt="Hair Landing Page" style="width:300px;height:300px;border:0;">
-  </a><h2>Hair Salon</h2></div>
-  <div><a href="nasa.html">
-    <img src="../images/nasaImage.jpg" alt="NASA Landing Page" style="width:300px;height:300px;border:0;">
-  </a><H2>NASA</H2></div>
-  <div><a href="dashboard.html">
-    <img src="../images/dashboard.jpg" alt="Dashboard Landing Page" style="width:300px;height:300px;border:0;">
-  </a><h2>Dashboard</h2></div>
+</form>
+<div class="row">
+  <div class="photo">
+    <a href="Hair.html">
+    <img class="tile"src="../images/hairPage.jpg" alt="Hair Landing Page"></a>
+    <h2>Hair Salon</h2>
+  </div>
+
+  <div class="photo">
+    <a href="nasa.html">
+    <img class="tile"src="../images/nasaImage.jpg" alt="NASA Landing Page"></a>
+    <H2>NASA</H2>
+  </div>
   
-  <div><a href="moving-squares.html"><img src="../images/movingSquares.jpg" alt="Moving Squares Page" style="width:300px;height:300px;border:0;"></a> <H2>Moving Squares</H2></div>
+  <div clas="photo">
+    <a href="dashboard.html">
+    <img class="tile"src="../images/dashboard.jpg" alt="Dashboard Landing Page"></a>
+    <h2>Dashboard</h2>
+  </div>
   
-  <div><a href="TicTacToe.html"><img src="../images/ticTacToe.jpg" alt="Tic Tac Toe Board" style="width:300px; height: 300px; border: 0;"> </a><H2>Tic Tac Toe</H2></div>
+  <div class="photo">
+    <a href="moving-squares.html">
+    <img class="tile"src="../images/movingSquares.jpg" alt="Moving Squares Page"> </a> 
+    <H2>Moving Squares</H2>
+  </div>
   
-  <div><a href="https://andrecas26.github.io/checkpoint2-BaconIpsum/"> <img src="../images/checkpoint2.jpg"style="width:300px; height: 300px; border: 0;"> </a> <H2>Bacon Ipsum</H2></div>
-</section>
+  <div class="photo">
+    <a href="TicTacToe.html">
+    <img class="tile"src="../images/ticTacToe.jpg" alt="Tic Tac Toe Board"> </a>
+    <H2>Tic Tac Toe</H2>
+  </div>
+  
+  <div class="photo">
+    <a href="https://andrecas26.github.io/checkpoint2-BaconIpsum/">
+    <img class="tile"src="../images/checkpoint2.jpg"> </a> 
+    <H2>Bacon Ipsum</H2>
+  </div>
+</div>
 </body>
 </html>
