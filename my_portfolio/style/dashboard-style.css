@@ -98,7 +98,7 @@ html {
   }
 
 aside {/*flex calculator*/
-  background-color: lightgreen;
+  background-color: purple;
   grid-area: aside;
 
 }
