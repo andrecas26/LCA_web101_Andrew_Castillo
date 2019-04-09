@@ -194,7 +194,11 @@ aside {/*flex calculator*/
       "banner"
       "footer";
   }
-  
+  /*to do list*/
+  li {
+    background-color: #fff;
+    color: red;
+
  /* Extra Small and up (Portrait Phones) */
 
 /* Small and up (Landscape Phones) */
