@@ -96,6 +96,35 @@ html {
     text-align: right;
     grid-area: display;
   }
+  /*fidget spinner*/
+  #wheel {
+    width:150px;
+    height:150px;
+    background-color: brown;
+    border-radius:150px;
+  }
+  
+  #wheel {
+    transition: all 3s;
+    transition-timing-function: linear;
+  }
+  
+  #currentTotal {
+    width:150px;
+    height:50px;
+    border:1px solid black;
+    text-align: center;
+    font-size: 48px;
+  }
+  
+  .speed {
+    width:150px;
+    height:20px;
+    border:1px solid black;
+    border-radius:25px;
+    text-align: center;
+    cursor:pointer;
+  }
 
 aside {/*flex calculator*/
   background-color: purple;
@@ -165,16 +194,16 @@ aside {/*flex calculator*/
               border: 2px solid black;
           }
     
-  nav {
+  nav {/*grid calculaor*/
     background-color: lightsalmon;
     grid-area: nav;
   }
-  aside {
+  aside {/*flex calculator*/
     background-color: lightgreen;
     grid-area: aside;
   }
-  .banner {
-    background-color: lavender;
+  .banner {/*Date and time*/
+    background-color: lightseagreen;
     grid-area: banner;
     margin-bottom: 0px;
   }
@@ -195,9 +224,73 @@ aside {/*flex calculator*/
       "footer";
   }
   /*to do list*/
+  
+  #list_section {
+    text-align: center;
+  }
+  
+  h1 {
+    color: white;
+    margin: 0px auto;
+    padding: 20px;
+  }
+  
+  ul {
+    padding: 0;
+  }
+  
   li {
     background-color: #fff;
-    color: red;
+    color: #000;
+    font-size: 20px;
+    list-style-type: none;
+    width: 20%;
+    margin: 0px auto;
+    border-radius: 3px;
+    border: 1px solid #000;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    background-color: #fff;
+    color: #666;
+    padding: 10px;
+    display: inline-block;
+    margin: 20px auto 20px auto;
+    width: 80%;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .item {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  input[type='text'] {
+    font-size: 12px;
+    padding: 6px;
+    border: 1px solid #000;
+    border-radius: 3px;
+  }
+  
+  input[type='submit'] {
+    background-color: #fff;
+    color: #000;
+    border-radius: 8px;
+    border: none;
+    padding: 5px;
+  }
+  
+  #newItemButton {
+    display: none;
+  }
+  
+  #itemField {
+    margin-top: 60px;
+    width: 10%;
+  }
 
  /* Extra Small and up (Portrait Phones) */
 
