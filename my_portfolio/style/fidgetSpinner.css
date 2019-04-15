@@ -4,7 +4,7 @@
     border-radius:200px;
   }
   
-  img {
+  #wheel {
     transition: all 3s;
     transition-timing-function: linear;
   }
