@@ -151,13 +151,13 @@ aside {/*flex calculator*/
               min-width:400px;
           }
   
-          .buttons,.result{
+          .buttons,#results{
               display: flex;
               flex-wrap: wrap;
               flex: 0 1 100%;
           }
-          .result{
-              height: 40px;
+          #results{
+              height: 60px;
               border: 1px solid black;
               justify-content: flex-end;
               align-items: center;
@@ -165,6 +165,7 @@ aside {/*flex calculator*/
               background: #000;
               color:#fff;
               padding:0 10px;
+              width: 1550px;
           }
           .button{
               display:flex;
