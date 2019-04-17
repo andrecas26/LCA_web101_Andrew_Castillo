@@ -6,9 +6,13 @@ $(function() {
 
   $newItemForm.on('submit', function(e) {
     e.preventDefault();
-    let text = $('input[type="text"]').val();
-    $list.append(`<li>${text}</li>`);
+    let text = document.getElementById("itemField").value;
+    if(text != ""){
+      $list.append(`<li>${text}</li>`);
+    }
+    
     $('input[type="text"]').val('');
+    console.log("huh");
   });
 
   $list.on('click', 'li', function() {
@@ -18,12 +22,9 @@ $(function() {
 
 });
 //Function for location//  
-    $list.on('click', 'li', function() {
-      let $this = $(this);
-      $this.remove();
-    });
+
   
-  });
+
   var myLocation = document.getElementById("my-coordinates")
 
 function getLocation() {
@@ -50,6 +51,7 @@ function goGo() {
   data.totalRevs += data.totalRPS;
   data.totalCurrent += data.totalRPS;
   $("#wheel").css({ 'transform': 'rotate(' + data.totalRevs + 'deg)'});
+  console.log("gogo");
   updateReport();
 }
 
@@ -63,6 +65,7 @@ $("#wheel").click(function (){
   data.totalRevs ++;
   data.totalCurrent ++;
   updateReport();
+  console.log("wheel click");
 })
 
 $(".speed").click(function (){ 
@@ -72,6 +75,7 @@ $(".speed").click(function (){
     data.totalRPS += parseFloat($(this).data( "val" ));
     $( this ).children("span").html( parseInt($( this ).children("span").html()*1.15)); 
     $( this ).data( "cost", parseInt($(this).data( "cost" ) * 1.15) ); 
+    console.log("speed");
   }
   updateReport();
 })
@@ -105,4 +109,4 @@ function deleteLast() {
 //function plus_minus(){
   //var val = document.querySelector(#results).value;
   //if (val.charAt(0) === '')
-}//
+//
