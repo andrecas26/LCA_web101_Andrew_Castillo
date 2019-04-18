@@ -35,3 +35,8 @@ button{
     font-size:24px;
     font-weight:bolder;
 }
+#clear{
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+}

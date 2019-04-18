@@ -14,3 +14,10 @@ function placeMark(divId){
     var box=document.getElementById(divId);
     box.innerHTML = gameMarker;
 }
+//function clearBoard
+
+function clearBoard() {
+    location.reload();
+}
+//function to prevent marker from being replaced
+
