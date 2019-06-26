@@ -1,0 +1,2 @@
+C:\Users\18069\Documents\DevFolder\CSharp\Checkers\Checkers\obj\Debug\Checkers.csprojAssemblyReference.cache
+C:\Users\18069\Documents\DevFolder\CSharp\Checkers\Checkers\obj\Debug\Checkers.csproj.CoreCompileInputs.cache
